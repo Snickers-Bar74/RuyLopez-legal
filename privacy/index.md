@@ -13,8 +13,9 @@ title: Ruy Lopez privacy policy
 ## The short version
 
 Ruy Lopez is a chess learning app. It asks for a nickname and nothing else. It has no
-accounts with passwords, no email addresses, no advertising, and no analytics. Your games
-are stored on your own phone. A build with online services enabled creates an anonymous
+accounts with passwords, no email addresses and no advertising. Your games are stored on
+your own phone. It sends anonymous counts of app opens and finished games, and a report when
+it crashes. A build with online services enabled creates an anonymous
 session when it can reach the server. Leaderboard participation and reports send the
 additional information described below.
 
@@ -45,15 +46,26 @@ comment you add, and the anonymous identifier of whoever reported it, so that on
 reporting the same name twice counts once. Deleting your account removes the identifier from
 reports you made; the report stays.
 
+**Anonymous usage counts.** That the app was opened, and that a game was finished, with
+its result and whether it was rated, the app version and the platform. Each count carries
+a random number that is made when the app starts, is never stored and is forgotten when the
+app closes. Nothing in it identifies you or your phone, and no profile is built from it.
+
+**Crash reports.** When the app crashes, it sends the error and where in the code it
+happened, the app version, the phone model and Android version, and technical details such
+as memory at the time. A report contains no nickname, games or account identifier, and the
+app sets Sentry not to collect default personal data or screenshots.
+
 ## What we do not collect
 
 No email addresses. No passwords. No real names. No phone numbers. No location. No contacts.
-No photos. No device identifiers or advertising IDs. No usage analytics or tracking. No
-crash reports. No payment information — the app is free and has no purchases.
+No photos. No device identifiers or advertising IDs. No analytics beyond the anonymous
+counts above, and no tracking across apps or websites. No payment information — the app is free and has no purchases.
 
 **There is no advertising in this app, and no data is shared with advertisers or data
 brokers.** There are no advertising or analytics SDKs. The Supabase SDK provides the
-online functions described in this policy.
+online functions described in this policy, and the Sentry SDK sends crash reports. The
+anonymous counts are sent over plain HTTPS without an SDK.
 
 ---
 
@@ -70,8 +82,8 @@ Most of it:
 - Positions you saved to play from later
 - All settings
 
-Apart from rated results uploaded after joining the leaderboard and reports you choose
-to send, this stays on your device. Uninstalling removes the app's local data; it does
+Apart from rated results uploaded after joining the leaderboard, reports you choose to
+send, and the counts and crash reports above, this stays on your device. Uninstalling removes the app's local data; it does
 not request deletion of an existing online account.
 
 ---
@@ -85,6 +97,15 @@ Connecting to the service also sends the network information needed for HTTPS, s
 your IP address. The app does not use it to determine your location. Browsing the
 leaderboard contacts the service even if you have not chosen a nickname.
 
+**PostHog** receives the anonymous usage counts, on servers in the EU, and processes them
+on our behalf: <https://posthog.com/privacy>. The app tells PostHog not to look up a
+location from the connection.
+
+**Sentry** receives crash reports and processes them on our behalf:
+<https://sentry.io/privacy/>.
+
+Both see the connection's IP address, which is needed to deliver the data.
+
 **Lichess** is **not** contacted by the app. Opening data is downloaded once by the
 developer during development and shipped inside the app. Playing does not send anything to
 Lichess.
@@ -92,7 +113,7 @@ Lichess.
 **Stockfish** runs entirely on your phone. Your moves are never sent anywhere to be
 analysed.
 
-We do not sell data. We do not share it with anyone except the hosting provider above.
+We do not sell data. We do not share it with anyone except the three providers above.
 
 ---
 
@@ -128,6 +149,7 @@ to or deletion of server data; we need to verify ownership before acting on a re
 
 ## Retention
 
+Anonymous usage counts are kept for up to one year, and crash reports for up to 90 days.
 Leaderboard entries are kept until you delete your account. Tip reports are kept until the
 tip is corrected, then deleted. Name reports are kept until they have been looked at, then
 deleted. Local data lives on your phone until you delete the account
