@@ -5,7 +5,7 @@ title: Ruy Lopez privacy policy
 
 # Privacy Policy — Ruy Lopez
 
-**Last updated:** 2026-10-17
+**Last updated:** 2026-10-18
 **Contact:** jonathan@nullmening.org
 
 ---
@@ -46,8 +46,13 @@ comment you add, and the anonymous identifier of whoever reported it, so that on
 reporting the same name twice counts once. Deleting your account removes the identifier from
 reports you made; the report stays.
 
-**Anonymous usage counts.** That the app was opened, and that a game was finished, with
-its result and whether it was rated, the app version and the platform. Each count carries
+**Anonymous usage counts.** That the app was opened; that the introduction was finished
+or skipped, at which page and with the level you chose; that a game was started, with the
+opening (an opening of your own counts only as "own"), the bot's rating, your colour and
+whether it was rated; that a game was finished, with its result and whether it was rated;
+that a Practice session was finished, with how many positions you found alone; that a game
+was analysed; that you made an opening of your own (never its name); and that you chose a
+nickname (never which). Each count carries the app version and the platform. Each count carries
 a random number that is made when the app starts, is never stored and is forgotten when the
 app closes. Nothing in it identifies you or your phone, and no profile is built from it.
 
