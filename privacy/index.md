@@ -5,7 +5,7 @@ title: Ruy Lopez privacy policy
 
 # Privacy Policy — Ruy Lopez
 
-**Last updated:** 2026-10-18
+**Last updated:** 2026-10-23
 **Contact:** jonathan@nullmening.org
 
 ---
@@ -88,8 +88,14 @@ Most of it:
 - All settings
 
 Apart from rated results uploaded after joining the leaderboard, reports you choose to
-send, and the counts and crash reports above, this stays on your device. Uninstalling removes the app's local data; it does
-not request deletion of an existing online account.
+send, and the counts and crash reports above, the app stores this data locally.
+
+**Android device backup.** Depending on your device and backup settings, Android may
+include app data in a cloud backup (such as Google Drive) or a device-to-device transfer.
+This can include your game history, settings and saved account session. Ruy Lopez does
+not receive these system backups. Installing the app again or moving to another device
+may restore saved data. Uninstalling removes the app's local data; it does not delete a
+system backup or request deletion of an existing online account.
 
 ---
 
