@@ -5,7 +5,7 @@ title: Ruy Lopez privacy policy
 
 # Privacy Policy — Ruy Lopez
 
-**Last updated:** 2026-10-23
+**Last updated:** 2026-10-24
 **Contact:** jonathan@nullmening.org
 
 ---
@@ -14,8 +14,8 @@ title: Ruy Lopez privacy policy
 
 Ruy Lopez is a chess learning app. It asks for a nickname and nothing else. It has no
 accounts with passwords, no email addresses and no advertising. Your games are stored on
-your own phone. It sends anonymous counts of app opens and finished games, and a report when
-it crashes. A build with online services enabled creates an anonymous
+your own phone. Optional usage counts are off until you enable **Share usage counts** in Settings.
+Separate crash reports are sent when crash reporting is configured in the app. A build with online services enabled creates an anonymous
 session when it can reach the server. Leaderboard participation and reports send the
 additional information described below.
 
@@ -46,7 +46,13 @@ comment you add, and the anonymous identifier of whoever reported it, so that on
 reporting the same name twice counts once. Deleting your account removes the identifier from
 reports you made; the report stays.
 
-**Anonymous usage counts.** That the app was opened; that the introduction was finished
+**Optional usage counts.** These help us improve the app. They are off by default for new and
+existing installations. Enable or disable **Share usage counts** in Settings at any time. Disabling
+cancels active requests where possible and stops future counts; data already sent cannot be recalled.
+Events before opt-in are discarded. The choice is saved on your device and may be restored by Android
+backup. No feature requires opting in. Crash reporting is separate from this choice.
+
+With the setting enabled and analytics configured in the app, counts include that the app was opened; that the introduction was finished
 or skipped, at which page and with the level you chose; that a game was started, with the
 opening (an opening of your own counts only as "own"), the bot's rating, your colour and
 whether it was rated; that a game was finished, with its result and whether it was rated;
@@ -54,7 +60,7 @@ that a Practice session was finished, with how many positions you found alone; t
 was analysed; that you made an opening of your own (never its name); and that you chose a
 nickname (never which). Each count carries the app version and the platform. Each count carries
 a random number that is made when the app starts, is never stored and is forgotten when the
-app closes. Nothing in it identifies you or your phone, and no profile is built from it.
+app closes. No stable account or device identifier is sent, and no person profile is built from it.
 
 **Crash reports.** When the app crashes, it sends the error and where in the code it
 happened, the app version, the phone model and Android version, and technical details such
@@ -64,13 +70,13 @@ app sets Sentry not to collect default personal data or screenshots.
 ## What we do not collect
 
 No email addresses. No passwords. No real names. No phone numbers. No location. No contacts.
-No photos. No device identifiers or advertising IDs. No analytics beyond the anonymous
+No photos. No device identifiers or advertising IDs. No analytics beyond the optional
 counts above, and no tracking across apps or websites. No payment information — the app is free and has no purchases.
 
 **There is no advertising in this app, and no data is shared with advertisers or data
 brokers.** There are no advertising or analytics SDKs. The Supabase SDK provides the
 online functions described in this policy, and the Sentry SDK sends crash reports. The
-anonymous counts are sent over plain HTTPS without an SDK.
+optional counts are sent over plain HTTPS without an SDK.
 
 ---
 
@@ -108,7 +114,7 @@ Connecting to the service also sends the network information needed for HTTPS, s
 your IP address. The app does not use it to determine your location. Browsing the
 leaderboard contacts the service even if you have not chosen a nickname.
 
-**PostHog** receives the anonymous usage counts, on servers in the EU, and processes them
+**PostHog** receives the optional usage counts, on servers in the EU, and processes them
 on our behalf: <https://posthog.com/privacy>. The app tells PostHog not to look up a
 location from the connection.
 
@@ -160,7 +166,7 @@ to or deletion of server data; we need to verify ownership before acting on a re
 
 ## Retention
 
-Anonymous usage counts are kept for up to one year, and crash reports for up to 90 days.
+Optional usage counts are kept for up to one year, and crash reports for up to 90 days.
 Leaderboard entries are kept until you delete your account. Tip reports are kept until the
 tip is corrected, then deleted. Name reports are kept until they have been looked at, then
 deleted. Local data lives on your phone until you delete the account
