@@ -5,7 +5,7 @@ title: Ruy Lopez privacy policy
 
 # Privacy Policy — Ruy Lopez
 
-**Last updated:** 2026-10-24
+**Last updated:** 2026-10-28
 **Contact:** jonathan@nullmening.org
 
 ---
@@ -32,6 +32,11 @@ how much of the opening was played from the book) and the moves of the game
 in standard chess notation (PGN). Game moves are stored so that
 leaderboard entries can be verified. Results played before choosing a nickname wait on
 your phone and are uploaded if you join later. Unrated games are not uploaded.
+
+**Your public profile.** Anyone can open your profile from the leaderboard: your wins, draws
+and losses, your best rating, the openings you play most, the month you joined and your last
+ten results (the bot, the side, the rating change and when it was played, never the moves).
+Turn off Public profile in Settings to show only what the board shows.
 
 **An anonymous account identifier.** Created automatically when online services connect,
 including before you choose a nickname, and kept in the app's session on your phone. It
